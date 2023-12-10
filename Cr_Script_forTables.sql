@@ -45,12 +45,12 @@ CREATE TABLE IF NOT EXISTS Suppliers (
     contact_email VARCHAR(50)
 );
 
-CREATE TABLE OrderStatus (
+CREATE TABLE  IF NOT EXISTS OrderStatus (
     status_id INT PRIMARY KEY AUTO_INCREMENT,
     status_name VARCHAR(20)
 );
 
-CREATE TABLE Orders (
+CREATE TABLE  IF NOT EXISTS Orders (
     order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
     order_date DATE,
@@ -60,12 +60,12 @@ CREATE TABLE Orders (
     FOREIGN KEY (status_id) REFERENCES OrderStatus(status_id)
 );
 
-CREATE TABLE RestockingStatus (
+CREATE TABLE  IF NOT EXISTS RestockingStatus (
     status_id INT PRIMARY KEY AUTO_INCREMENT,
     status_name VARCHAR(20)
 );
 
-CREATE TABLE Restocking (
+CREATE TABLE  IF NOT EXISTS Restocking (
     restocking_id INT PRIMARY KEY AUTO_INCREMENT,
     product_id INT,
     quantity INT,
