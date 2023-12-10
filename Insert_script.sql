@@ -83,8 +83,7 @@ VALUES
     (2, 'Jane', 'Jane'),
     (3, 'Bob', 'Bob'),
     (4, 'Alice', 'Alice'),
-    (5, 'Charlie', 'Charlie'),
-    (6, 'Kranthi', 'Kranthi');
+    (5, 'Charlie', 'Charlie');
     -- Add more rows as needed;
     
 INSERT INTO Partners (partner_name) VALUES
