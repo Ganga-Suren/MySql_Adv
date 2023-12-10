@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS grad_Test;
+CREATE DATABASE IF NOT EXISTS grad_project;
 
-USE grad_Test;
+USE grad_project;
 
 CREATE TABLE IF NOT EXISTS Customers (
     customer_id INT PRIMARY KEY AUTO_INCREMENT,
