@@ -117,6 +117,13 @@ CREATE TABLE IF NOT EXISTS Cart (
 );
 
 
+CREATE TABLE if not exists Partners (
+    partner_id INT PRIMARY KEY AUTO_INCREMENT,
+    partner_name VARCHAR(50) NOT NULL,
+    description VARCHAR(200)
+);
+
+
 
 
 

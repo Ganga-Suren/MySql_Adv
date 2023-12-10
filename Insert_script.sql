@@ -86,3 +86,8 @@ VALUES
     (5, 'Charlie', 'Charlie'),
     (6, 'Kranthi', 'Kranthi');
     -- Add more rows as needed;
+    
+INSERT INTO Partners (partner_name) VALUES
+    ('Northwind Traders', 'Sells Food Items'),
+    ('AdventureWorks Cycles', 'Sells Bikes and Accessories'),
+    ('Sakila Films', 'Sells Films');
