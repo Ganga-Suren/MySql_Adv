@@ -60,6 +60,16 @@ CREATE TABLE  IF NOT EXISTS Orders (
     FOREIGN KEY (status_id) REFERENCES OrderStatus(status_id)
 );
 
+CREATE TABLE OrderDetails
+(
+    OrderDetailId INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(255) NOT NULL,
+    Quantity INT NOT NULL,
+    order_id INT NOT NULL,
+    CONSTRAINT FK_OrderDetails_Orders FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+);
+
+
 CREATE TABLE  IF NOT EXISTS RestockingStatus (
     status_id INT PRIMARY KEY AUTO_INCREMENT,
     status_name VARCHAR(20)
@@ -111,6 +121,7 @@ CREATE TABLE IF NOT EXISTS Cart (
     customer_id INT, 
     product_name VARCHAR(300),
     quantity INT,
+    price decimal(20,20),
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
