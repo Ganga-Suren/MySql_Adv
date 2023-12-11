@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS Products (
     target_level INT,
     quantity_per_unit VARCHAR(50),
     discontinued TINYINT(1),
-    minimum_stock_quantity INT,
+    minimum_instock_quantity INT,
     category VARCHAR(50),
     attachments LONGBLOB
 );
