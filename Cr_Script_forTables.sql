@@ -54,7 +54,7 @@ CREATE TABLE  IF NOT EXISTS Orders (
     order_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
     order_date DATE,
-    total_price DECIMAL(19,4),
+    total_price INt,
     status_id INT,
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     FOREIGN KEY (status_id) REFERENCES OrderStatus(status_id)
