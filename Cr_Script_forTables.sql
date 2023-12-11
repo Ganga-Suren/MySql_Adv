@@ -79,10 +79,9 @@ CREATE TABLE  IF NOT EXISTS Restocking (
 CREATE TABLE IF NOT EXISTS WishList (
     wishlist_id INT PRIMARY KEY AUTO_INCREMENT,
     customer_id INT,
-    product_id INT,
+    product_name VARCHAR(250),
     date_added DATE,
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
-    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 CREATE TABLE IF NOT EXISTS Ratings (
@@ -109,11 +108,10 @@ CREATE TABLE IF NOT EXISTS CustomerCredentials (
 
 CREATE TABLE IF NOT EXISTS Cart (
     cart_id INT PRIMARY KEY AUTO_INCREMENT,
-    customer_id INT,
-    product_id INT,
+    customer_id INT, 
+    product_name VARCHAR(300),
     quantity INT,
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
-    FOREIGN KEY (product_id) REFERENCES Products(product_id)
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
 
