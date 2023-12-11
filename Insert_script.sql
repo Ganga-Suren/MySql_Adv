@@ -1,4 +1,4 @@
--- Insert data into Customers table
+	- Insert data into Customers table
 INSERT INTO Customers (first_name, last_name, email, job_title, business_phone, home_phone, mobile_phone, address, city, state_province, zip_postal_code, country_region, web_page, notes, attachments)
 VALUES
 ('John', 'Doe', 'john.doe@example.com', 'Manager', '123-456-7890', '987-654-3210', '555-123-4567', '123 Main St', 'Cityville', 'CA', '12345', 'USA', 'http://www.example.com', 'Some notes about John Doe', NULL),
@@ -86,7 +86,7 @@ VALUES
     (5, 'Charlie', 'Charlie');
     -- Add more rows as needed;
     
-INSERT INTO Partners (partner_name) VALUES
+INSERT INTO Partners (partner_name, description) VALUES
     ('Northwind Traders', 'Sells Food Items'),
     ('AdventureWorks Cycles', 'Sells Bikes and Accessories'),
     ('Sakila Films', 'Sells Films');
